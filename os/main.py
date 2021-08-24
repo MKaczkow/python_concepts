@@ -25,8 +25,8 @@ def main():
 	# print(os.listdir())
 
 	# get file info
-	print(os.stat('main.py'))
-	last_mod_time = os.stat('main.py').st_mtime
+	print(os.stat('threading_example.py'))
+	last_mod_time = os.stat('threading_example.py').st_mtime
 	print(datetime.fromtimestamp(last_mod_time))
 
 	# traverse directory tree - walk - generator
