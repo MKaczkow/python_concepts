@@ -3,7 +3,7 @@ import pytest
 from scripts import TRUE, FALSE
 from scripts import ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN
 from scripts import ADD, INC, MUL, POW, DEC, SUB
-#from scripts import ISZERO, GTE, LTE, GT, LT, EQ
+from scripts import ISZERO, GTE, LTE, GT, LT, EQ
 from scripts import decode_number
 
 
@@ -20,6 +20,7 @@ from scripts import decode_number
     (TEN,   10),
 ])
 def test_numbers(given, expected):
+    print(decode_number(given))
     assert decode_number(given) == expected
 
 
