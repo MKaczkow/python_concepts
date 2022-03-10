@@ -1,10 +1,10 @@
 import pytest
 
-from lambdas import ZERO, ONE, TWO, THREE, FOUR
-from lambdas import ADD, LTE, FALSE, TRUE
-from lambdas import LIST, APPEND, PREPEND, REVERSE, LENGTH, ANY, ALL
-from lambdas import MAP, RANGE, REDUCE, FILTER, TAKE, DROP, INDEX
-from lambdas import decode_number, decode_list
+from scripts import ZERO, ONE, TWO, THREE, FOUR
+from scripts import ADD, LTE, FALSE, TRUE
+from scripts import LIST, APPEND, PREPEND, REVERSE, LENGTH, ANY, ALL
+from scripts import MAP, RANGE, REDUCE, FILTER, TAKE, DROP, INDEX
+from scripts import decode_number, decode_list
 
 
 @pytest.mark.parametrize('given', [
