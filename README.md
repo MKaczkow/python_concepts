@@ -8,7 +8,7 @@ Repo for general concepts for working with python (e.g. regex, files operations,
 4. [Regex](https://github.com/MKaczkow/python_concepts/tree/master/regex_example) (re)
 5. [Generators](https://github.com/MKaczkow/python_concepts/tree/master/generators)
 6. [Iterators](https://github.com/MKaczkow/python_concepts/tree/master/iterators)
-7. [Decorators](https://github.com/MKaczkow/python_concepts/tree/master/decorators)
+7. [Decorators](https://github.com/MKaczkow/python_concepts/tree/master/decorators) (and [more decorators](https://github.com/MKaczkow/a_for_art))
 8. [Lambdas](https://github.com/MKaczkow/python_concepts/tree/master/lambdas) 
 9. [Unit Testing](https://github.com/MKaczkow/python_concepts/tree/master/testing) (unittest, pytest)
 10. [Connecting to DB](https://github.com/MKaczkow/python_concepts/tree/master/sql) (sqlite3)
