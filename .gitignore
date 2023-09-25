@@ -13,6 +13,9 @@ __pycache__/
 threading_mutliprocessing/*.jpg
 **/*.jpg
 
+# drafts
+DRAFT.ipynb
+
 # Pycharm
 **/.idea/**
 
