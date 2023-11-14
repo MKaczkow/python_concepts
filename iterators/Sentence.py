@@ -1,6 +1,4 @@
-
 class Sentence:
-
     def __init__(self, sentence_string: str):
         self.sentence_string = sentence_string
 
@@ -11,8 +9,9 @@ class Sentence:
         if not self.sentence_string:
             raise StopIteration
 
-        first_word, self.sentence_string = self.sentence_string.split(maxsplit=1)[0],\
-                                           ' '.join(self.sentence_string.split(maxsplit=1)[1:])
+        first_word, self.sentence_string = self.sentence_string.split(maxsplit=1)[
+            0
+        ], " ".join(self.sentence_string.split(maxsplit=1)[1:])
 
         return first_word
 

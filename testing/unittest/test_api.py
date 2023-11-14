@@ -14,10 +14,7 @@ import json
 
 def test_if_login_valid():
     url = "https://reqres.in/api/login/"
-    data = {
-        "email": "eve.holt@reqres.in",
-        "password": "cityslicka"
-            }
+    data = {"email": "eve.holt@reqres.in", "password": "cityslicka"}
     response = requests.get(url, data=data)
     token = json.loads(response.text)
 

@@ -57,6 +57,3 @@ def test_fixture_2(numbers):
 @pytest.mark.parametrize("x, y, z", [(10, 1, 10), (10, 2, 100), (10, 3, 1000)])
 def test_params(x, y, z):
     assert x**y == z
-
-
-

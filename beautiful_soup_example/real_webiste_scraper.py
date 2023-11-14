@@ -4,27 +4,25 @@ import csv
 
 
 def main():
-
-    csv_file = open('cms_scrape.csv', 'w')
+    csv_file = open("cms_scrape.csv", "w")
     csv_writer = csv.writer(csv_file)
-    csv_writer.writerow(['headline', 'summary', 'video'])
+    csv_writer.writerow(["headline", "summary", "video"])
 
-    source = requests.get('https://coreyms.com').text
-    soup = BeautifulSoup(source, 'lxml')
+    source = requests.get("https://coreyms.com").text
+    soup = BeautifulSoup(source, "lxml")
 
-    for article in soup.find_all('article'):
-
+    for article in soup.find_all("article"):
         headline = article.h2.a.text
         print(headline)
 
-        summary = article.find('div', class_='entry-content').p.text
+        summary = article.find("div", class_="entry-content").p.text
         print(summary)
 
         try:
-            vid_src = article.find('iframe', class_='youtube-player')['src']
-            vid_id = vid_src.split('/')[4]
-            vid_id = vid_id.split('?')[0]
-            yt_link = f'https://youtube.com/watch?v={vid_id}'
+            vid_src = article.find("iframe", class_="youtube-player")["src"]
+            vid_id = vid_src.split("/")[4]
+            vid_id = vid_id.split("?")[0]
+            yt_link = f"https://youtube.com/watch?v={vid_id}"
         except AttributeError:
             yt_link = None
         except TypeError:

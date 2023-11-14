@@ -2,9 +2,8 @@ import requests as req
 
 
 def main():
-
     # basic GET request and response
-    r = req.get('https://xkcd.com/353/')
+    r = req.get("https://xkcd.com/353/")
 
     # print(r.text)
     print(r.url)
@@ -16,7 +15,7 @@ def main():
     print(r.raw.read(10))
 
     # basic GET request and response
-    r = req.get('https://xkcd.com/327/')
+    r = req.get("https://xkcd.com/327/")
 
     # print(r.text)
     print(r.url)

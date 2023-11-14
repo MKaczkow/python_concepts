@@ -1,6 +1,4 @@
-
 class MyRange:
-
     def __init__(self, start, end):
         self.value = start
         self.end = end

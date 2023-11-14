@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    text_to_search = '''
+    text_to_search = """
     abcdefghijklmnopqurtuvwxyz
     ABCDEFGHIJKLMNOPQRSTUVWXYZ
     1234567890
@@ -22,7 +22,7 @@ def main():
     Ms Davis
     Mrs. Robinson
     Mr. T
-    '''
+    """
 
     # matching phone numbers
     # pattern = re.compile(r'\d\d\d[.-]\d\d\d[.-]\d\d\d\d')
@@ -31,7 +31,7 @@ def main():
     # pattern = re.compile(r'\d{3}[.-]\d{3}[.-]\d{3}')
 
     # matching 800 and 900 phone numbers
-    pattern = re.compile(r'(?!(8|9)00)\d{3}[.-]\d{3}[.-]\d{4}')
+    pattern = re.compile(r"(?!(8|9)00)\d{3}[.-]\d{3}[.-]\d{4}")
 
     # matching phone numbers that aren't 800 or 900
     # pattern = re.compile(r'[^89][^0][^0][.-]\d\d\d[.-]\d\d\d\d')
@@ -44,7 +44,7 @@ def main():
     for match in matches:
         # print(match)
         match_span = list(match.span())
-        print(text_to_search[match_span[0]:match_span[1]])
+        print(text_to_search[match_span[0] : match_span[1]])
 
 
 if __name__ == "__main__":

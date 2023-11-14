@@ -8,5 +8,5 @@ from ._recursive import *
 from ._signed import *
 
 for name, func in globals().copy().items():
-    if '_' not in name and name.isupper():
+    if "_" not in name and name.isupper():
         func.__qualname__ = name

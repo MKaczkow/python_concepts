@@ -3,7 +3,6 @@ import calc
 
 
 class TestCalc(unittest.TestCase):
-
     def test_add(self):
         self.assertEqual(calc.add(10, 5), 15)
         self.assertEqual(calc.add(1, -1), 0)
@@ -29,6 +28,5 @@ class TestCalc(unittest.TestCase):
             calc.divide(10, 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
-

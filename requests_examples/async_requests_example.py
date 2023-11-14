@@ -6,17 +6,17 @@ asession = AsyncHTMLSession()
 
 
 async def get_delay_1():
-    r = await asession.get('https://httpbin.org/delay/1')
+    r = await asession.get("https://httpbin.org/delay/1")
     return r
 
 
 async def get_delay_2():
-    r = await asession.get('https://httpbin.org/delay/2')
+    r = await asession.get("https://httpbin.org/delay/2")
     return r
 
 
 async def get_delay_5():
-    r = await asession.get('https://httpbin.org/delay/5')
+    r = await asession.get("https://httpbin.org/delay/5")
     return r
 
 
@@ -30,4 +30,4 @@ for result in results:
 
 t2 = time.perf_counter()
 
-print(f'Asynchronous execution took {t2 - t1} seconds')
+print(f"Asynchronous execution took {t2 - t1} seconds")

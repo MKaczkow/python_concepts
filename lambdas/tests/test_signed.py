@@ -7,10 +7,13 @@ from scripts import CONS, CAR, CDR
 from scripts import decode_number
 
 
-@pytest.mark.parametrize('given, expected', [
-    (THREE, 3),
-    (FOUR,  4),
-])
+@pytest.mark.parametrize(
+    "given, expected",
+    [
+        (THREE, 3),
+        (FOUR, 4),
+    ],
+)
 def test_sign_unsign(given, expected):
     assert decode_number(UNSIGN(SIGN(given))) == expected
 
@@ -25,12 +28,15 @@ def test_sign_checks():
     assert ISNEG(n) is TRUE
 
 
-@pytest.mark.parametrize('lsign, left, rsign, right, expsign, expvalue', [
-    (TRUE, ONE, TRUE, ONE, TRUE, 2),  # 1 + 1 = 2
-    (TRUE, ONE, FALSE, TWO, FALSE, 1),  # 1 - 2 = -1
-    (FALSE, TWO, TRUE, ONE, FALSE, 1),  # -2 + 1 = -1
-    (FALSE, TWO, FALSE, ONE, FALSE, 3),  # -2 - 1 = -3
-])
+@pytest.mark.parametrize(
+    "lsign, left, rsign, right, expsign, expvalue",
+    [
+        (TRUE, ONE, TRUE, ONE, TRUE, 2),  # 1 + 1 = 2
+        (TRUE, ONE, FALSE, TWO, FALSE, 1),  # 1 - 2 = -1
+        (FALSE, TWO, TRUE, ONE, FALSE, 1),  # -2 + 1 = -1
+        (FALSE, TWO, FALSE, ONE, FALSE, 3),  # -2 - 1 = -3
+    ],
+)
 def test_sadd(lsign, left, rsign, right, expsign, expvalue):
     lv = CONS(lsign)(left)
     rv = CONS(rsign)(right)
@@ -39,10 +45,13 @@ def test_sadd(lsign, left, rsign, right, expsign, expvalue):
     assert decode_number(CDR(res)) == expvalue
 
 
-@pytest.mark.parametrize('lsign, left, rsign, right, expsign, expvalue', [
-    (TRUE, TWO, TRUE, ONE, TRUE, 1),  # 2 - 1 = 1
-    (TRUE, TWO, TRUE, THREE, FALSE, 1),  # 2 - 3 = -1
-])
+@pytest.mark.parametrize(
+    "lsign, left, rsign, right, expsign, expvalue",
+    [
+        (TRUE, TWO, TRUE, ONE, TRUE, 1),  # 2 - 1 = 1
+        (TRUE, TWO, TRUE, THREE, FALSE, 1),  # 2 - 3 = -1
+    ],
+)
 def test_ssub(lsign, left, rsign, right, expsign, expvalue):
     lv = CONS(lsign)(left)
     rv = CONS(rsign)(right)
@@ -51,12 +60,15 @@ def test_ssub(lsign, left, rsign, right, expsign, expvalue):
     assert decode_number(CDR(res)) == expvalue
 
 
-@pytest.mark.parametrize('lsign, left, rsign, right, expsign, expvalue', [
-    (TRUE, TWO, TRUE, THREE, TRUE, 6),  # 2 * 3 = 6
-    (TRUE, TWO, FALSE, THREE, FALSE, 6),  # 2 * (-3) = -6
-    (FALSE, TWO, TRUE, THREE, FALSE, 6),  # -2 * 3 = -6
-    (FALSE, TWO, FALSE, THREE, TRUE, 6),  # -2 * (-3) = 6
-])
+@pytest.mark.parametrize(
+    "lsign, left, rsign, right, expsign, expvalue",
+    [
+        (TRUE, TWO, TRUE, THREE, TRUE, 6),  # 2 * 3 = 6
+        (TRUE, TWO, FALSE, THREE, FALSE, 6),  # 2 * (-3) = -6
+        (FALSE, TWO, TRUE, THREE, FALSE, 6),  # -2 * 3 = -6
+        (FALSE, TWO, FALSE, THREE, TRUE, 6),  # -2 * (-3) = 6
+    ],
+)
 def test_smul(lsign, left, rsign, right, expsign, expvalue):
     lv = CONS(lsign)(left)
     rv = CONS(rsign)(right)

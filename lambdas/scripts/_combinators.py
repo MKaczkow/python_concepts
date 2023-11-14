@@ -4,7 +4,4 @@ from ._bool import IDENTITY, TRUE
 I = IDENTITY
 K = TRUE
 S = lambda a: lambda b: lambda c: a(c)(b(c))
-Y = lambda f: (
-    (lambda x: f(lambda y: x(x)(y)))
-    (lambda x: f(lambda y: x(x)(y)))
-)
+Y = lambda f: ((lambda x: f(lambda y: x(x)(y)))(lambda x: f(lambda y: x(x)(y))))

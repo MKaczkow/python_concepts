@@ -14,4 +14,4 @@ def decode_list(encoded) -> list:
             return decoded
         decoded.append(HEAD(encoded))
         encoded = TAIL(encoded)
-    raise RuntimeError('probably infinite list')
+    raise RuntimeError("probably infinite list")
