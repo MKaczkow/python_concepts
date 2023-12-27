@@ -17,3 +17,5 @@ Repo for general concepts for working with python (e.g. regex, files operations,
 11. [Threading and Multiprocessing](https://github.com/MKaczkow/python_concepts/tree/master/threading_multiprocessing) 
 12. [Poetry](https://github.com/MKaczkow/python_concepts/tree/master/poetry)
 13. [Linear Programming](https://github.com/MKaczkow/python_concepts/tree/master/linear_programming)
+14. [Protocol buffer](https://github.com/MKaczkow/python_concepts/tree/master/protobuf_example)
+15. [gRPC](https://github.com/MKaczkow/python_concepts/tree/master/grpc_example)
