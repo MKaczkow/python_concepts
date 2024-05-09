@@ -3,10 +3,10 @@
 # idea from yt tutorial on:
 # https://www.youtube.com/watch?v=byaxg00Gf9I
 
-import pytest
-import requests
 import json
 
+import pytest
+import requests
 
 # def main_url():
 #     return "https://reqres.in"

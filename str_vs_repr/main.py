@@ -1,6 +1,6 @@
 import datetime
-import pytz
 
+import pytz
 
 a = [1, 2, 3, 4]
 b = "test_string"

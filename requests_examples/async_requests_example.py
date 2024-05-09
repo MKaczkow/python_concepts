@@ -1,6 +1,6 @@
-from requests_html import AsyncHTMLSession
 import time
 
+from requests_html import AsyncHTMLSession
 
 asession = AsyncHTMLSession()
 

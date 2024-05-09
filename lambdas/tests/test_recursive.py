@@ -1,8 +1,6 @@
 import pytest
-
-from scripts import ONE, TWO, THREE, FOUR, FIVE, SIX
-from scripts import FAC, FIB, DIV, MOD, MIN, MAX
-from scripts import decode_number
+from scripts import (DIV, FAC, FIB, FIVE, FOUR, MAX, MIN, MOD, ONE, SIX, THREE,
+                     TWO, decode_number)
 
 
 @pytest.mark.parametrize(

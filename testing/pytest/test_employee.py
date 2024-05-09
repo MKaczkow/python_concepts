@@ -1,6 +1,6 @@
-import pytest
 import random
 
+import pytest
 from employee import Employee
 
 

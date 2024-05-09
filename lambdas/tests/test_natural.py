@@ -1,10 +1,7 @@
 import pytest
-
-from scripts import TRUE, FALSE
-from scripts import ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN
-from scripts import ADD, INC, MUL, POW, DEC, SUB
-from scripts import ISZERO, GTE, LTE, GT, LT, EQ
-from scripts import decode_number
+from scripts import (ADD, DEC, EIGHT, EQ, FALSE, FIVE, FOUR, GT, GTE, INC,
+                     ISZERO, LT, LTE, MUL, NINE, ONE, POW, SEVEN, SIX, SUB,
+                     TEN, THREE, TRUE, TWO, ZERO, decode_number)
 
 
 @pytest.mark.parametrize(

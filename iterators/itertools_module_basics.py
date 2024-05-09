@@ -1,6 +1,5 @@
 import itertools
 
-
 # counter
 print("\ncounter: ")
 counter = itertools.count(start=19, step=-3)

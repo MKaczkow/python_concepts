@@ -1,6 +1,5 @@
-import time
 import multiprocessing
-
+import time
 
 start = time.perf_counter()
 

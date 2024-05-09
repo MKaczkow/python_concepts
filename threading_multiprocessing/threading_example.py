@@ -1,6 +1,5 @@
-import time
 import threading
-
+import time
 
 start = time.perf_counter()
 

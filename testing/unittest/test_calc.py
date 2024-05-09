@@ -1,5 +1,5 @@
-import pytest
 import calc
+import pytest
 
 
 @pytest.mark.basic

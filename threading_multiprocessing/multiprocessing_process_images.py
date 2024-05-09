@@ -1,5 +1,6 @@
-import time
 import concurrent.futures
+import time
+
 from PIL import Image, ImageFilter
 
 

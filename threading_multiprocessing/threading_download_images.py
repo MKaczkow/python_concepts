@@ -1,8 +1,8 @@
-import requests
-import time
-import os
 import concurrent.futures
+import os
+import time
 
+import requests
 
 img_urls = [
     "https://images.unsplash.com/photo-1516117172878-fd2c41f4a759",

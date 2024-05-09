@@ -1,7 +1,7 @@
-import os
 import logging
-from time import time
+import os
 from functools import wraps
+from time import time
 
 
 def checkdir(func):

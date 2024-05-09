@@ -1,6 +1,6 @@
-from ._natural import MUL, DEC, LTE, ONE, TWO, ADD, ISZERO, ZERO, INC, SUB, LT
 from ._bool import NOT
 from ._combinators import Y
+from ._natural import ADD, DEC, INC, ISZERO, LT, LTE, MUL, ONE, SUB, TWO, ZERO
 
 # recursive
 FAC = Y(lambda f: lambda n: ISZERO(n)(lambda _: ONE)(lambda _: MUL(n)(f(DEC(n))))(ZERO))

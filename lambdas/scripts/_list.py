@@ -1,8 +1,7 @@
-from ._bool import TRUE, FALSE, OR, NOT
-from ._pair import CONS, CAR, CDR
+from ._bool import FALSE, NOT, OR, TRUE
 from ._combinators import Y
-from ._natural import DEC, INC, GTE, ISZERO, ZERO
-
+from ._natural import DEC, GTE, INC, ISZERO, ZERO
+from ._pair import CAR, CDR, CONS
 
 LIST = CONS(TRUE)(TRUE)
 PREPEND = lambda xs: lambda x: CONS(FALSE)(CONS(x)(xs))

@@ -1,6 +1,5 @@
-import time
 import concurrent.futures
-
+import time
 
 start = time.perf_counter()
 

@@ -1,10 +1,6 @@
 import pytest
-
-from scripts import SIGN, UNSIGN, NEG, ISPOS, ISNEG, SADD, SSUB, SMUL
-from scripts import TRUE, FALSE
-from scripts import ONE, TWO, THREE, FOUR
-from scripts import CONS, CAR, CDR
-from scripts import decode_number
+from scripts import (CAR, CDR, CONS, FALSE, FOUR, ISNEG, ISPOS, NEG, ONE, SADD,
+                     SIGN, SMUL, SSUB, THREE, TRUE, TWO, UNSIGN, decode_number)
 
 
 @pytest.mark.parametrize(

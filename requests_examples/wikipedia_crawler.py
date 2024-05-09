@@ -1,6 +1,5 @@
 from requests_html import HTML, HTMLSession
 
-
 # does wikipedia has public API??
 
 

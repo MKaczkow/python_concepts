@@ -1,5 +1,4 @@
-from ._bool import AND, TRUE, FALSE, IDENTITY
-
+from ._bool import AND, FALSE, IDENTITY, TRUE
 
 # arithmetic
 INC = lambda n: lambda a: lambda b: a(n(a)(b))

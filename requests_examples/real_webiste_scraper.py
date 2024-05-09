@@ -1,5 +1,6 @@
-from requests_html import HTML, HTMLSession
 import csv
+
+from requests_html import HTML, HTMLSession
 
 
 def main():

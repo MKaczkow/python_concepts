@@ -2,11 +2,12 @@
 # https://github.com/CoreyMSchafer/code_snippets/tree/master/Generators
 # by Corey Schafer
 
-from pympler import summary, muppy
-import psutil
-import resource
 import os
+import resource
 import sys
+
+import psutil
+from pympler import muppy, summary
 
 
 def memory_usage_psutil():

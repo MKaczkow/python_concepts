@@ -1,4 +1,4 @@
-from scripts import CONS, CAR, CDR
+from scripts import CAR, CDR, CONS
 
 
 def test_pair():

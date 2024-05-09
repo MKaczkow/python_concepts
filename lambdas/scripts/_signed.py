@@ -1,6 +1,6 @@
-from ._bool import NOT, TRUE, XOR, XNOR
-from ._natural import ADD, LTE, DIFF, MUL
-from ._pair import CONS, CAR, CDR
+from ._bool import NOT, TRUE, XNOR, XOR
+from ._natural import ADD, DIFF, LTE, MUL
+from ._pair import CAR, CDR, CONS
 
 # signed numbers
 SIGN = lambda n: CONS(TRUE)(n)

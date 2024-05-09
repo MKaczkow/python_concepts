@@ -2,9 +2,10 @@
 # https://github.com/CoreyMSchafer/code_snippets/tree/master/Generators
 # by Corey Schafer
 
-import mem_profile
 import random
 import time
+
+import mem_profile
 
 
 def main():

@@ -1,4 +1,4 @@
-from ._bool import TRUE, FALSE
+from ._bool import FALSE, TRUE
 
 # pair
 CONS = lambda a: lambda b: lambda c: c(a)(b)
