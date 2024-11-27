@@ -1,8 +1,31 @@
 import pytest
-from scripts import (ADD, ALL, ANY, APPEND, DROP, FALSE, FILTER, FOUR, INDEX,
-                     LENGTH, LIST, LTE, MAP, ONE, PREPEND, RANGE, REDUCE,
-                     REVERSE, TAKE, THREE, TRUE, TWO, ZERO, decode_list,
-                     decode_number)
+from scripts import (
+    ADD,
+    ALL,
+    ANY,
+    APPEND,
+    DROP,
+    FALSE,
+    FILTER,
+    FOUR,
+    INDEX,
+    LENGTH,
+    LIST,
+    LTE,
+    MAP,
+    ONE,
+    PREPEND,
+    RANGE,
+    REDUCE,
+    REVERSE,
+    TAKE,
+    THREE,
+    TRUE,
+    TWO,
+    ZERO,
+    decode_list,
+    decode_number,
+)
 
 
 @pytest.mark.parametrize(

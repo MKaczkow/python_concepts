@@ -1,7 +1,32 @@
 import pytest
-from scripts import (ADD, DEC, EIGHT, EQ, FALSE, FIVE, FOUR, GT, GTE, INC,
-                     ISZERO, LT, LTE, MUL, NINE, ONE, POW, SEVEN, SIX, SUB,
-                     TEN, THREE, TRUE, TWO, ZERO, decode_number)
+from scripts import (
+    ADD,
+    DEC,
+    EIGHT,
+    EQ,
+    FALSE,
+    FIVE,
+    FOUR,
+    GT,
+    GTE,
+    INC,
+    ISZERO,
+    LT,
+    LTE,
+    MUL,
+    NINE,
+    ONE,
+    POW,
+    SEVEN,
+    SIX,
+    SUB,
+    TEN,
+    THREE,
+    TRUE,
+    TWO,
+    ZERO,
+    decode_number,
+)
 
 
 @pytest.mark.parametrize(

@@ -1,6 +1,5 @@
 import pytest
-from scripts import (AND, FALSE, IMPLICATION, NAND, NOR, NOT, OR, TRUE, XNOR,
-                     XOR)
+from scripts import AND, FALSE, IMPLICATION, NAND, NOR, NOT, OR, TRUE, XNOR, XOR
 
 
 @pytest.mark.parametrize(
