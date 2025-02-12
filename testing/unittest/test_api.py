@@ -12,6 +12,7 @@ import requests
 #     return "https://reqres.in"
 
 
+@pytest.mark.skip(reason="no way of currently testing this")
 def test_if_login_valid():
     url = "https://reqres.in/api/login/"
     data = {"email": "eve.holt@reqres.in", "password": "cityslicka"}
