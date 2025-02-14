@@ -23,3 +23,4 @@ Repo for general concepts for working with python (e.g. regex, files operations,
 15. [gRPC](https://github.com/MKaczkow/python_concepts/tree/master/grpc_example)
 16. [PageRank](https://github.com/MKaczkow/python_concepts/tree/master/page_rank)
 17. [Graphs](https://github.com/MKaczkow/python_concepts/tree/master/graphs)
+18. [Linear probing (hash collisions resolution)](./linear_probing)
