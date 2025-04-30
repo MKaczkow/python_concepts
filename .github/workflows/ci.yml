@@ -48,3 +48,14 @@ jobs:
 
       - name: Run tests
         run: pytest
+
+  doc:
+    name: Check Markdown links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Markdown dead link checker
+        uses: AlexanderDokuchaev/md-dead-link-check@v1.2.0

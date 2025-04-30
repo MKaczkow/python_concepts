@@ -11,8 +11,8 @@ Repo for general concepts for working with python (e.g. regex, files operations,
 3. [OS commands](https://github.com/MKaczkow/python_concepts/tree/master/os_example)
 4. [Regex](https://github.com/MKaczkow/python_concepts/tree/master/regex_example)
 5. [Generators](https://github.com/MKaczkow/python_concepts/tree/master/generators)
-6. [Iterators](https://github.com/MKaczkow/python_concepts/tree/master/iterators)
-7. [Decorators](https://github.com/MKaczkow/python_concepts/tree/master/decorators) (and [more decorators](https://github.com/MKaczkow/a_for_art))
+6. [Iterators](https://github.com/MKaczkow/python_concepts/tree/master/iterators) <!-- md-dead-link-check: off -->
+7. [Decorators](https://github.com/MKaczkow/python_concepts/tree/master/decorators) (and [more decorators](https://github.com/MKaczkow/a_for_art)) <!-- md-dead-link-check: on -->
 8. [Lambdas](https://github.com/MKaczkow/python_concepts/tree/master/lambdas) 
 9. [Unit Testing](https://github.com/MKaczkow/python_concepts/tree/master/testing)
 10. [Connecting to DB](https://github.com/MKaczkow/python_concepts/tree/master/sql)
@@ -25,3 +25,4 @@ Repo for general concepts for working with python (e.g. regex, files operations,
 17. [Graphs](https://github.com/MKaczkow/python_concepts/tree/master/graphs)
 18. [Linear probing (hash collisions resolution)](./linear_probing)
 19. [Steganography](./steganography)
+20. [Code profiling](./profiling_code)
