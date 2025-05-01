@@ -29,6 +29,22 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 * `tuna`
 * `snakeviz`
 
+## Example
+* `python -m cProfile -o slow_random.prof slow_random.py`
+* `snakeviz slow_random.prof `
+* go to web browser and see the results
+* resulting plots will look like this:
+<!-- md-dead-link-check: off -->
+![icicle](./profiling-1.png)  
+... or this:  
+![sunburst](./profiling-2.png)  
+<!-- md-dead-link-check: on -->
+
+* each function is represented as a rectangle, with the size of the rectangle proportional to the time spent in that function. You can set given rectangle as root and see the time spent in it's sub-functions
+
 ## References
 * [quick yt tutorial](https://www.youtube.com/watch?v=BZzb_Wpag_M)
-* 
+* [some tutorial]()
+* [daily dev list](https://daily.dev/blog/top-7-python-profiling-tools-for-performance)
+* [scalene](https://github.com/plasma-umass/scalene)
+* [snakeviz](https://github.com/jiffyclub/snakeviz/tree/master)

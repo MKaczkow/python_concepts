@@ -1,5 +1,6 @@
 # Profiler output
 profiling_code/results.prof
+profiling_code/*.prof
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
