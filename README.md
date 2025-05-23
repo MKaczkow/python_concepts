@@ -26,3 +26,4 @@ Repo for general concepts for working with python (e.g. regex, files operations,
 18. [Linear probing (hash collisions resolution)](./linear_probing)
 19. [Steganography](./steganography)
 20. [Code profiling](./profiling_code)
+21. [Managing dependencies with uv](./uv_package_manager/)
